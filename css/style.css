@@ -29,12 +29,12 @@ body{
     
     display: grid;
     max-width: 610px;
-    max-height: 620px;
+    max-height: 610px;
     width: 100%;
     height: auto;
     grid-template-columns: repeat(6, minmax(50px, 100px));
     grid-template-rows: repeat(6, minmax(50px, 100px));
-    grid-gap: 2px;
+    grid-gap: 5px;
 }
 
 .grid-item{
