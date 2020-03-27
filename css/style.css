@@ -2,12 +2,14 @@ body{
     font-family: sans-serif;
 }
 
+/* размещение всех элементов в столбец по центру */
 .wrapper{
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
+/* оформление кнопки */
 .btn-start{
     text-decoration: none;	
     font-size: 18px;	
@@ -18,35 +20,38 @@ body{
     width: 226px;				 	
     height: 57px;				
     line-height: 57px;
-    margin-top: 21px;
+    margin-top: 35px;
 }
 
 .btn-start:hover{
     background-color: rgb(12, 73, 185);
 }
 
+/* класс игрового поля */
 .grid{
-    
     display: grid;
-    max-width: 610px;
-    max-height: 610px;
+    max-width: 625px;
+    max-height: 625px;
     width: 100%;
     height: auto;
     grid-template-columns: repeat(6, minmax(50px, 100px));
     grid-template-rows: repeat(6, minmax(50px, 100px));
-    grid-gap: 2px;
+    grid-gap: 5px;
 }
 
+/* класс ячейки игрового поля */
 .grid-item{
     background-color: orange;
     line-height: 320%;
     min-height: 8vh;
 }
 
+/* класс промаха */
 .miss {
     background-color: red;
 }
 
+/* класс текущей цели */
 .target {
     background-color: green;
     color: white;
@@ -55,6 +60,7 @@ body{
     text-align: center;
 }
 
+/* класс "скрыватель"*/
 .hide{
     display: none;
 }
